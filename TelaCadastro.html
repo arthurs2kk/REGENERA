@@ -1,0 +1,134 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #000000, #ff8c00);
+        }
+
+        .login-container {
+            background: #f1efef;
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            height: auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .login-container img {
+            width: 180px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+
+        }
+
+        .login-container h1 {
+            margin-bottom: 25px;
+            color: #333;
+            font-size: 28px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .login-container input:focus {
+            border-color: #2575fc;
+            outline: none;
+            box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background: #2575fc;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-container button:hover {
+            background: #6a11cb;
+        }
+
+        .login-container .links {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .login-container .links a {
+            color: #2575fc;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .login-container .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsivo */
+        @media(max-width: 400px) {
+            .login-container {
+                width: 90%;
+                padding: 30px 20px;
+            }
+
+            .login-container img {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <!-- Agora a imagem faz parte da caixa branca -->
+        <img src="IMG_1757361440643-Photoroom.png" alt="Logo">
+        <h1>faça seu cadastro!</h1>
+        <form id="registerForm">
+            <input type="email" id="Email2" placeholder="Email" required>
+            <input type="password" id="Senha2" placeholder="Senha" required>
+            <button type="submit">cadastrar</button>
+            <a href="TelaLogin.html">já tenho cadastro</a>
+        </form>
+
+
+
+    </div>
+    </div>
+    <script type="module" src='telaCadastro.js'></script>
+
+
+</body>
+
+
+</html>
