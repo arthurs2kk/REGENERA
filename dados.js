@@ -37,6 +37,7 @@ function salvarDados() {
     const medicamentos = document.getElementById("medicamentos").value;
     const orgaos = document.getElementById("orgaos").checked;
     const planoSaude = document.getElementById("planoSaude").value;
+    const contatoEmergencia = document.getElementById("contatoEmergencia").value;
 
     set(ref(db, "usuarios/" + uid), {
         nome: nome,
@@ -46,13 +47,15 @@ function salvarDados() {
         doencas: doencas,
         medicamentos: medicamentos,
         doadorOrgaos: orgaos,
-        planoSaude: planoSaude
+        planoSaude: planoSaude,
+        contatoEmergencia: contatoEmergencia
+
     })
         .then(() => {
             alert("Dados salvos com sucesso!");
 
             // Gera link único pro usuário
-            const linkUnico = `https:///perfil.html?id=${uid}`;
+            const linkUnico = `https://arthurs2kk.github.io/usuario/?id=${uid}`;
             document.getElementById("meuLink").innerHTML = `
               📌 Seu link público: <a href="${linkUnico}" target="_blank">${linkUnico}</a>
             `;
