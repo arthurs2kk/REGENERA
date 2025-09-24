@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial REGENERA</title>
+    <style>
+        /* --- Estilo Geral --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #353754;
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: #1a3264;
+            color: #fff;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-titulo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        header nav h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff8c00;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        header nav a {
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        header nav a:hover {
+            background-color: #ff8c00;
+            color: #1a3264;
+        }
+
+        /* --- Seção Vídeo --- */
+        #tutorial {
+            max-width: 1000px;
+            margin: 60px auto;
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #tutorial h1 {
+            color: #1a3264;
+            margin-bottom: 20px;
+        }
+
+        #tutorial p {
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        #tutorial iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a3264;
+            color: #fff;
+            border-top: 3px solid #ff8c00;
+        }
+
+        /* --- Responsividade --- */
+        @media (max-width: 768px) {
+            #tutorial iframe {
+                height: 300px;
+            }
+
+            #tutorial h1 {
+                font-size: 1.6em;
+            }
+
+            #tutorial p {
+                font-size: 1em;
+            }
+
+            header nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #tutorial iframe {
+                height: 220px;
+            }
+
+            #tutorial h1 {
+                font-size: 1.4em;
+            }
+
+            #tutorial p {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <div class="logo-titulo">
+                <img src="IMG_1757361440643-Photoroom.png" class="logo" alt="Logo">
+                <h2>REGENERA</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Modificar Informações</a></li>
+                <li><a href="TelaLogin.html">Login</a></li>
+                <li><a href="TelaCadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Tutorial -->
+    <section id="tutorial">
+        <h1>Como Usar a Pulseira REGENERA</h1>
+        <p>Assista ao nosso vídeo tutorial e aprenda passo a passo como configurar e utilizar sua pulseira de forma
+            segura e prática.</p>
+        <iframe src="https://www.youtube.com/embed/seu_video_aqui" allowfullscreen></iframe>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 REGENERA. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
