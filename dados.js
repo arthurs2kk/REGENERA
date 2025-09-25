@@ -37,7 +37,7 @@ function salvarDados() {
     const medicamentos = document.getElementById("medicamentos").value;
     const orgaos = document.getElementById("orgaos").checked;
     const planoSaude = document.getElementById("planoSaude").value;
-   
+    const numEmer = document.getElementById('numEmer').value;
 
     set(ref(db, "usuarios/" + uid), {
         nome: nome,
@@ -48,7 +48,7 @@ function salvarDados() {
         medicamentos: medicamentos,
         doadorOrgaos: orgaos,
         planoSaude: planoSaude,
-
+        numEmer: numEmer
     })
         .then(() => {
             alert("Dados salvos com sucesso!");
@@ -68,4 +68,3 @@ function salvarDados() {
 
 
 document.getElementById("salvarBtn").addEventListener("click", salvarDados);
-
